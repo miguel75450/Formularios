@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Recibidos</title>
+</head>
+<body>
+    <h2>Información Recibida</h2>
+    <ul id="datos"></ul>
+
+    <script>
+        let datos = JSON.parse(sessionStorage.getItem("formData"));
+        let lista = document.getElementById("datos");
+
+        for (let clave in datos) {
+            let elemento = document.createElement("li");
+            elemento.textContent = `${clave}: ${datos[clave]}`;
+            lista.appendChild(elemento);
+        }
+    </script>
+</body>
+</html>
