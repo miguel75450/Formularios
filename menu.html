@@ -1,45 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Menú de Tecnologías</title>
     <style>
-     ul{
-        background-color: aquamarine;
-        width: 20%;
-        padding: 0px;
-     }
+        ul {
+            background-color: aquamarine;
+            width: 20%;
+            padding: 0;
+            margin: auto;
+        }
 
-     ul li{ 
-        list-style: none;
-        padding: 20px;
-        border-bottom: 2px solid #ffe2e2;
-        text-align: center;
-        font-size: large;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-transform: uppercase;
+        ul li { 
+            list-style: none;
+            padding: 20px;
+            border-bottom: 2px solid #ffe2e2;
+            text-align: center;
+            font-size: large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-transform: uppercase;
+            color: #000000;
+        }
 
-        color: #000000;
-        cursor: pointer;
-     }
+        ul li a {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #9a48c9;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            letter-spacing: 1px;
+            border-radius: 50px;
+            box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.50);
+            text-align: center;
+            transition: background-color 1s;
+        }
 
-     ul li:hover{
-        background-color: rgb(187, 180, 180);
-     }
+        ul li a:hover {
+            background-color: #7a3ba5; /* Cambio de color al pasar el mouse */
+        }
     </style>
 </head>
 <body>
     <ul>
-        <li>HTML</li>
-        <li>CSS3</li>
-        <li>JAVA</li>
-        <li>PHP</li>
-        <li>PYTHON</li>
-        <li>BOOTSTRAP</li>
-        <li>JQUERY</li>
-        <li>ANGULAR</li>
-        <li>RUBY</li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS3</a></li>
+        <li><a href="#">JAVA</a></li>
+        <li><a href="#">PHP</a></li>
+        <li><a href="#">PYTHON</a></li>
+        <li><a href="#">BOOTSTRAP</a></li>
+        <li><a href="#">JQUERY</a></li>
+        <li><a href="#">ANGULAR</a></li>
+        <li><a href="#">RUBY</a></li>
     </ul>
 </body>
 </html>
