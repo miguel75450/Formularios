@@ -3,23 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Colores</title>
     <style>
-       div{
-        width: 200px; height: 200px; background-color: aqua;
-       }
+        /* Estilos generales para todos los div */
+        div {
+            width: 200px;
+            height: 200px;
+            padding: 10px; 
+            margin: 15px;  
+            border: 2px solid black; 
+        }
+
+        /* Estilos específicos por clase */
+        .clave-color {
+            background-color: red;
+            padding: 5px;
+            margin: 20px;
+            border: 3px dashed red;
+        }
+
+        .div {
+            background-color: #aaa;
+            padding: 8px;
+            margin: 12px;
+            border: 2px dotted blue;
+        }
+
+        .clasehsl {
+            background-color: hsl(145, 77%, 43%);
+            padding: 8px;
+            margin: 12px;
+            border: 2px dotted blue;
+        }
+
+        .transparencia {
+            width: 250px;
+            height: 250px;
+            background-color: hsl(295, 77%, 43%);
+            padding: 10px;
+            margin: 18px;
+            border: 2px solid gray;
+        }
+
+        .degradado {
+            background: linear-gradient(blue, green, red, orange);
+            padding: 7px;
+            margin: 15px;
+            border: 3px double purple;
+        }
     </style>
 </head>
 <body>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <var></var>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div class="clave-color"></div>
+    <br>
+    <div>Aplicar color</div>
+    <div class="div"></div>
+    <br>
+    <div class="clasehsl"></div>
+    <br>
+    <div class="transparencia"></div>
+    <br>
+    <div class="degradado"></div>
+
+
 </body>
 </html>

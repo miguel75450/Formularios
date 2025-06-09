@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores y Posicionamiento</title>
+
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilos generales para los div */
+        div {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border: 2px solid black;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        /* Estilos de colores */
+        .clave-color {
+            background-color: red;
+            padding: 5px;
+            margin: 20px;
+            border: 3px dashed red;
+        }
+
+        .div {
+            background-color: #aaa;
+            padding: 8px;
+            margin: 12px;
+            border: 2px dotted blue;
+        }
+
+        .clasehsl {
+            background-color: hsl(145, 77%, 43%);
+            padding: 8px;
+            margin: 12px;
+            border: 2px dotted blue;
+        }
+
+        .transparencia {
+            width: 250px;
+            height: 250px;
+            background-color: hsl(295, 77%, 43%);
+            padding: 10px;
+            margin: 18px;
+            border: 2px solid gray;
+        }
+
+        .degradado {
+            background: linear-gradient(blue, green, red, orange);
+            padding: 7px;
+            margin: 15px;
+            border: 3px double purple;
+        }
+
+        /* Tipos de posicionamiento */
+        #relativo {
+            position: relative;
+            left: 50px;
+            background-color: lightblue;
+        }
+
+        #absoluto {
+            position: absolute;
+            right: 50px;
+            top: 100px;
+            background-color: lightcoral;
+        }
+
+        #fijo {
+            position: fixed;
+            background: blue;
+            color: white;
+            right: 100px;
+            top: 50px;
+            padding: 10px;
+        }
+
+        .flotante {
+            width: 100%;
+            height: auto;
+        }
+
+        .flotante div {
+            float: left;
+            background-color: lightgreen;
+        }
+
+        .flotante div:nth-child(2) {
+            float: right;
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>ELEMENTOS EN BLOQUE</h1>
+    <article class="bloque">
+        <div class="clave-color">UNO</div>
+        <div class="div">DOS</div>
+        <div class="clasehsl">TRES</div>
+        <div class="transparencia">CUATRO</div>
+    </article>
+
+    <h1>POSICIONAMIENTO</h1>
+    <article class="posicionamiento">
+        <div id="relativo">RELATIVO</div>
+        <div id="absoluto">ABSOLUTO</div>
+        <div id="fijo">FIJO</div>   
+    </article>
+
+    <h1>POSICIONAMIENTO FLOTANTE</h1>
+    <article class="flotante">
+        <div>PRIMERO</div>
+        <div>SEGUNDO</div>
+        <div>TERCERO</div>  
+    </article>
+</body>
+</html>
