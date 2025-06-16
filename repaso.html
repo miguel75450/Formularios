@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renta de Autos</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #111;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 1em;
+      background-color: #222;
+    }
+
+    .logo {
+      width: 100px;
+    }
+
+    h1 {
+      margin-top: 0.5em;
+    }
+
+    .formulario {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      padding: 1.5em;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .formulario label {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .formulario input,
+    .formulario select,
+    .formulario textarea {
+      width: 100%;
+      padding: 0.5em;
+      border: none;
+      border-radius: 5px;
+      margin-top: 0.3em;
+    }
+
+    button {
+      background-color: #333;
+      color: white;
+      padding: 0.75em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .logos-autos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+      padding: 1em;
+    }
+
+    .logos-autos img {
+      width: 100px;
+      height: auto;
+    }
+
+    @media (max-width: 600px) {
+      .formulario {
+        padding: 1em;
+      }
+
+      .logos-autos img {
+        width: 70px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="LogoAgenciaAutos.png" alt="Logo Agencia" class="logo" />
+    <h1>Renta tu Auto Ideal</h1>
+  </header>
+
+  <main>
+    <form class="formulario">
+      <label>Nombre completo:
+        <input type="text" name="nombre" />
+      </label>
+      <label>Fecha de renta:
+        <input type="date" name="fecha" />
+      </label>
+      <label>Días de uso:
+        <input type="number" name="dias" />
+      </label>
+      <label>Auto elegido:
+        <select name="auto">
+          <option value="infiniti">Infiniti</option>
+          <option value="audi">Audi</option>
+          <option value="porsche">Porsche</option>
+          <option value="bmw">BMW</option>
+          <option value="mercedes">Mercedes-Benz</option>
+        </select>
+      </label>
+      <label>¿Seguro incluido?
+        <input type="checkbox" name="seguro" />
+      </label>
+      <label>Comentarios:
+        <textarea name="comentarios"></textarea>
+      </label>
+      <button type="submit">Enviar solicitud</button>
+    </form>
+
+    <section class="logos-autos">
+      <img src="infiniti.png" alt="Infiniti" />
+      <img src="audi-logo.png" alt="Audi" />
+      <img src="porsche.png" alt="Porsche" />
+      <img src="BMW-logo.png" alt="BMW" />
+      <img src="mercedes-benz-logo.png" alt="Mercedes-Benz" />
+    </section>
+  </main>
+</body>
+</html>
